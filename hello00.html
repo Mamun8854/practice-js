@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New comment</title>
+  </head>
+  <body>
+    <section>
+      <div id="comment-section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          incidunt recusandae, fugit delectus nihil ab quos! Neque mollitia
+          optio voluptatibus voluptate perspiciatis aperiam, obcaecati error
+          quis voluptas aspernatur qui doloremque assumenda possimus, libero
+          praesentium, iusto omnis corporis unde quibusdam nisi aliquam nemo ad
+          corrupti saepe. Magnam obcaecati velit, temporibus, in recusandae
+          quaerat vitae esse maiores nesciunt dolorem rem voluptatum nisi!
+          Accusantium explicabo ipsa iusto libero deserunt necessitatibus earum
+          magnam fugiat, illo, tempora natus, aliquam eligendi dolorum non vero?
+          Repellendus, aliquam officia accusamus molestias nostrum hic ad in
+          blanditiis fugiat earum.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quia
+          cumque? Dicta, quas recusandae veritatis repellat sunt temporibus
+          libero nam aspernatur impedit ipsam atque quo quia, natus optio velit.
+          Ad autem repudiandae, ex animi hic excepturi? Debitis alias cupiditate
+          dolore eius architecto voluptate repudiandae eligendi maiores ducimus
+          obcaecati, autem iste nihil expedita pariatur voluptatibus nostrum
+          repellendus ea adipisci saepe molestiae id quas repellat magni! Odio
+          reiciendis commodi facilis aspernatur laudantium.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+          deleniti! Voluptate optio eveniet minima, rerum distinctio nulla
+          impedit ipsam dolorem magnam suscipit. Earum reprehenderit in
+          exercitationem ut ad ullam neque maiores eaque. Aspernatur voluptate
+          rerum labore facere consequatur. Illo ad minus praesentium non
+          asperiores ut ullam aspernatur dolorum tenetur labore.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          impedit fuga distinctio accusamus ad sunt quidem numquam, ducimus
+          iusto at! Autem possimus odio, commodi natus corporis eveniet
+          asperiores necessitatibus quia esse accusantium ex mollitia molestiae
+          nulla eum nemo repellat ab veritatis voluptatum aliquam aut libero
+          corrupti distinctio saepe iure. Laboriosam, provident porro! Expedita
+          voluptates vitae ex suscipit voluptate eos deserunt amet quasi aperiam
+          quia maxime autem sit illum nisi alias earum a animi doloribus minus
+          dolor incidunt, impedit porro nesciunt eveniet! Cupiditate culpa
+          corrupti fugiat recusandae dolore, nulla nesciunt? Excepturi ipsam
+          repudiandae similique iure magni. Atque obcaecati fuga iusto libero.
+        </p>
+      </div>
+
+      <div>
+        <textarea name="" id="input-field" cols="30" rows="10"></textarea>
+        <br />
+        <button id="btn-post">Post</button>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("btn-post")
+        .addEventListener("click", function () {
+          const newCommentField = document.getElementById("input-field");
+          const newComment = newCommentField.value;
+
+          const commentBody = document.getElementById("comment-section");
+          const p = document.createElement("p");
+          p.innerText = newComment;
+          commentBody.appendChild(p);
+
+          newCommentField.value = "";
+        });
+    </script>
+  </body>
+</html>
